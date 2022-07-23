@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: darkolivegreen;
+  color: #fff;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  background-color: darkolivegreen;
+}
+
+input {
+  border: none;
+  outline: none;
+  border: 2px solid darkolivegreen;
+  border-radius: 4px;
+  height: 30px;
+  padding: 2px;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+}
+
+h2 {
+  margin: 10px 0 20px;
+}
+
+
+.container {
+  position: relative;
+  background-color: seagreen;
+  box-shadow: 0px 3px 5px #333;
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-bottom: 40px;
+}
+
+.container > h2 {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+
+.result-container {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 0px 12px 10px;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+
+.result-container span {
+  flex-grow: 2;
+  margin-right: 10px;
+}
+
+.result-container .btn {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.setting.optional {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.setting.optional label {
+  font-size: 0.9em;
+}
+
+.setting.optional input {
+  width: 100%;
+  height: 40px;
+  font-size: 1em;
+}
+
+button.btn-large {
+  background-color: crimson;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+}
